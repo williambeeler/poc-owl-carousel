@@ -4,7 +4,9 @@
     display: flex !important;
     overflow: hidden;
 }
-
+#block .owl-carousel .item {
+    overflow: hidden;
+}
 #block .owl-carousel .collage {
     display: grid;
     position: relative; 
