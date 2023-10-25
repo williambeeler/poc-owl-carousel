@@ -1,11 +1,11 @@
 
-.owl-carousel {
+#block .owl-carousel {
     border: 5px solid green;
     display: flex !important;
     overflow: hidden;
 }
 
-.owl-carousel .item {
+#block .owl-carousel .item {
     display: grid;
     position: relative;
     grid-template-columns: 50% 50%;
@@ -15,20 +15,41 @@
       "img2 longImg";
 }
 
-.owl-carousel .item .img1 {
+#block .owl-carousel .item .img1 {
     grid-area: img1;
 }
-.owl-carousel .item .img2 {
+#block .owl-carousel .item .img2 {
     grid-area: img2;
 }
-.owl-carousel .item .img3 {
+#block .owl-carousel .item .img3 {
     grid-area: longImg;
 }
 
-.owl-carousel .item img {
+#block .owl-carousel .item img {
     position: relative;
     left: 0;
     width: 100%;
     height: auto;
     z-index: 1;
+}
+#block .owl-carousel .img {
+    position: relative;
+    transition: all 1s;
+}
+#block .owl-carousel .img .caption {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    z-index: 2;
+    transition: all 1s;
+}
+#block .owl-carousel .img:hover .caption {
+    opacity: 1;
 }
